@@ -1,9 +1,16 @@
-#header-top {
-    background-color: #FADEA4;
-    color: #A22E35;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header-logo {
-    width: 20%;
+header {
+    height: 60px;
+    border: 2px solid black;
+    background-color: #E69C4E;
 
+}
+
+#header_top {
+    border: 2px solid black;
 }
