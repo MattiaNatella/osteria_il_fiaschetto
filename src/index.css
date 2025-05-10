@@ -10,17 +10,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--primary);
+
     font-family: 'Lora', serif;
 }
 
 header {
     height: 60px;
     background-color: var(--secondary);
+    color: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #FADDA0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 body {
     background-color: var(--primary);
+    padding-top: 60px;
 }
 
 h1,

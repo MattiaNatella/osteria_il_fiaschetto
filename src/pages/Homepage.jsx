@@ -2,7 +2,7 @@ export const Homepage = () => {
     return (
         <>
             <section id="jumbotron" className=""></section>
-            <div className="container jumbotron text-center border border-2">
+            <div className="container jumbotron text-center">
                 <h1>La cucina Toscana nel Parco naturale di Coltano</h1>
                 <p>All’Osteria Il Fiaschetto di Coltano ti aspetta un viaggio tra le ricette della nonna e i sapori del territorio.</p>
 

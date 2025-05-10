@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <>
 
-            <div id="header-top" className='container border border-2 p-0 h-100 d-flex justify-content-between align-items-center'>
+            <div id="header-top" className='container p-0 h-100 d-flex justify-content-between align-items-center'>
 
                 <div className='logo-nome'>
                     Osteria Il Fiaschetto
