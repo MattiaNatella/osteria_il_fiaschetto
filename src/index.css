@@ -201,16 +201,16 @@ h3,
 
 /* Footer Styles */
 .site-footer {
-    background-color: var(--secondary);
-    color: var(--primary);
+    background-color: var(--primary);
+    color: var(--secondary);
     margin-top: 3rem;
-    border-top: 2px solid var(--primary);
+    border-top: 2px solid var(--secondary);
 }
 
 .site-footer h3 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .site-footer p {
@@ -224,14 +224,14 @@ h3,
 }
 
 .social-links a {
-    color: var(--primary);
+    color: var(--secondary);
     font-size: 1.5rem;
     transition: var(--transition);
 }
 
 .social-links a:hover {
     transform: translateY(-3px);
-    color: #971247;
+    color: #FADDA0;
 }
 
 /* Responsive footer adjustments */
