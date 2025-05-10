@@ -1,6 +1,7 @@
 export const Homepage = () => {
     return (
         <>
+            {/* JUMBOTRON */}
             <section className="hero-section">
                 <div className="container h-100">
                     <div className="hero-wrapper">
@@ -17,6 +18,8 @@ export const Homepage = () => {
                 </div>
             </section>
 
+
+            {/* ORARIO E DOVE SIAMO */}
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-3 orario-dove pt-3 text-center">
 
@@ -30,7 +33,7 @@ export const Homepage = () => {
                     </div>
 
                     <div className="col d-flex justify-content-center align-items-center">
-                        <img className="fiasco" src="./img/fiasco-header.webp" alt="" />
+                        <img className="fiasco" src="./img/fiasco-header.jpg" alt="" />
                     </div>
 
                     <div className="col">

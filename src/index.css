@@ -85,10 +85,6 @@ h3,
     width: 50%;
 }
 
-div.orario-dove {
-    background-color: var(--secondary);
-}
-
 .card {
     background-color: var(--secondary);
     border: 2px solid var(--primary);
@@ -128,9 +124,6 @@ div.orario-dove {
 }
 
 /* Rimuoviamo le regole di scaling e ripristiniamo le dimensioni originali */
-.orario-dove {
-    background-color: var(--secondary);
-}
 
 .orario-dove .card-header {
     font-size: 2rem;
