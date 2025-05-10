@@ -11,7 +11,9 @@ const MenuCard = ({ nome, desc, prezzo }) => (
 
 const Menu = () => (
     <div className='container mt-4 px-2 px-sm-3 px-md-4'>
-        <h1 className='text-center mb-4 mb-md-5'>Il Nostro Menu</h1>
+        <div className="d-flex justify-content-center">
+            <h1 className='menu-title main-title mb-4 mb-md-5'>Il Nostro Menu</h1>
+        </div>
         {menuCategories.map(category => (
             <div key={category} className="menu-section mb-4 mb-md-5">
                 <h2 className='menu-title mb-3 mb-md-4'>{category.charAt(0).toUpperCase() + category.slice(1)}</h2>

@@ -14,6 +14,11 @@
     font-family: 'Lora', serif;
 }
 
+h1,
+h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 header {
     height: 60px;
     background-color: var(--secondary);
@@ -122,12 +127,30 @@ div.orario-dove {
     line-height: 1.6;
 }
 
+/* Rimuoviamo le regole di scaling e ripristiniamo le dimensioni originali */
+.orario-dove {
+    background-color: var(--secondary);
+}
+
+.orario-dove .card-header {
+    font-size: 2rem;
+}
+
+.orario-dove .card-text {
+    font-size: 1.4rem;
+}
+
+.orario-dove .fiasco {
+    width: 50%;
+}
+
 /* Menu Styles */
 .menu-title {
     color: var(--secondary);
     font-family: 'Playfair Display', serif;
     border-bottom: 2px solid var(--secondary);
     padding-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .menu-card {
@@ -176,6 +199,57 @@ div.orario-dove {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.main-title {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: var(--secondary);
+    color: var(--primary);
+    margin-top: 3rem;
+    border-top: 2px solid var(--primary);
+}
+
+.site-footer h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.site-footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: var(--primary);
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    color: #971247;
+}
+
+/* Responsive footer adjustments */
+@media (max-width: 768px) {
+    .site-footer {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
 }
 
 /* Responsive Styles */
@@ -231,5 +305,87 @@ div.orario-dove {
 
     .menu-section {
         margin-bottom: 2rem;
+    }
+}
+
+/* Hero Image Styles */
+.hero-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    height: 600px;
+    /* Aumentata da 500px */
+    margin: 2rem auto 3rem;
+    /* Aggiunto margin auto per centrare */
+    width: 90%;
+    /* Ridotta da 100% per dare spazio ai lati */
+    max-width: 1400px;
+    /* Aggiunto max-width per controllare la dimensione massima */
+}
+
+.hero-wrapper {
+    position: relative;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    /* Aggiunto shadow per maggior profondità */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    border-radius: 15px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--secondary);
+    width: 80%;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 400px;
+        width: 95%;
+        /* Aumentata leggermente su mobile */
+        margin: 1rem auto 2rem;
+        /* Ridotti i margini su mobile */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
     }
 }
