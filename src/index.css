@@ -1,25 +1,170 @@
+:root {
+    --primary: #5e2129;
+    --secondary: #FADDA0;
+    --transition: all 0.3s ease;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ***********GENEREAL **************/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--primary);
+    font-family: 'Lora', serif;
 }
 
 header {
     height: 60px;
-    border: 2px solid black;
-    background-color: #FADDA0;
-
+    background-color: var(--secondary);
 }
 
-#header_top {
-    border: 2px solid black;
+body {
+    background-color: var(--primary);
 }
 
+h1,
+h2,
+h3,
+.logo-nome,
+.card-header {
+    font-family: 'Playfair Display', serif;
+}
+
+.logo-nome {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0 15px;
+}
+
+/* **************HEADER**************** */
+
+/* Header Navigation Styles */
+#header-top a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid var(--primary);
+    border-radius: 25px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: var(--transition);
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+#header-top a:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#header-top a.active {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+/************** JUMBOTRON*************** */
 .fiasco {
-    width: 30%;
+    width: 50%;
 }
 
 div.orario-dove {
-    background-color: #FADDA0;
-    ;
+    background-color: var(--secondary);
+}
+
+.card {
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    padding: 15px;
+}
+
+.card:hover {
+    transform: translate(0, -5px);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 2px solid var(--primary);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.card-header i {
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+.card-body {
+    padding: 20px 10px;
+}
+
+.card-text {
+    color: var(--primary);
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+/* Menu Styles */
+.menu-title {
+    color: var(--secondary);
+    font-family: 'Playfair Display', serif;
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 10px;
+}
+
+.menu-card {
+    background: var(--secondary);
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: var(--transition);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.menu-card h3 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-card .price {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.menu-card .description {
+    color: var(--primary);
+    font-size: 0.9rem;
+    margin: 10px 0;
+    font-style: italic;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }

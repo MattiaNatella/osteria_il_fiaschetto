@@ -10,7 +10,7 @@ export const Homepage = () => {
                 <div className="row row-cols-3 orario-dove pt-3">
 
                     <div className="col">
-                        <div className="card border-primary mb-3" >
+                        <div className="card mb-3" >
                             <div className="card-header"><i className="fa-solid fa-clock" style={{ color: "#971247" }}></i>Orari</div>
                             <div className="card-body text-primary">
 
@@ -24,7 +24,7 @@ export const Homepage = () => {
                     </div>
 
                     <div className="col">
-                        <div className="card border-primary mb-3" >
+                        <div className="card mb-3" >
                             <div className="card-header"><i class="fa-solid fa-location-dot" style={{ color: "#971247" }}></i>Dove Siamo</div>
                             <div className="card-body text-primary">
 

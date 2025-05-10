@@ -1,10 +1,11 @@
-import React from 'react'
+
+import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
     return (
         <>
 
-            <div id="header-top" className='container border border-2 p-0 h-100 d-flex justify-content-around align-items-center'>
+            <div id="header-top" className='container border border-2 p-0 h-100 d-flex justify-content-between align-items-center'>
 
                 <div className='logo-nome'>
                     Osteria Il Fiaschetto
@@ -12,8 +13,8 @@ const Header = () => {
 
                 <div>
                     <ul className='d-flex justify-content-between align-items-center list-unstyled m-0'>
-                        <li className='mx-4'><a href="#">Home</a></li>
-                        <li className='mx-4'><a href="#">Menu</a></li>
+                        <NavLink className='mx-4' to={'/'}>Home</NavLink>
+                        <NavLink className='mx-4' to={'/menu'}>Menu</NavLink>
                         <li className='mx-4'><a href="#">Contatti</a></li>
                         <li className='mx-4'><a href="#">Prenota</a></li>
                     </ul>
