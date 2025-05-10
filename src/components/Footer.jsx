@@ -4,9 +4,9 @@ const Footer = () => {
             <div className="container py-4">
                 <div className="row">
                     <div className="col-md-4 mb-3 mb-md-0">
-                        <h3>Osteria Il Fiaschetto</h3>
-                        <p>Via del Chiassatello, 1<br />Coltano (PI)</p>
-                        <p>Tel: 050 123456<br />Email: info@osteriailfiaschetto.it</p>
+                        <h3>Circolo Il Fiaschetto</h3>
+                        <p>Via palazzi, 39<br />Coltano (PI)</p>
+                        <p>Tel: 050 123456<br />Email: info@circoloilfiaschetto.it</p>
                     </div>
                     <div className="col-md-4 mb-3 mb-md-0">
                         <h3>Orari</h3>
