@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <>
 
-            <div id="header-top" className='container p-0  d-flex justify-content-between align-items-center'>
+            <div id="header-top" className='container   d-flex justify-content-between align-items-center'>
 
                 <div className='logo-nome'>
                     <h1>Circolo Il Fiaschetto</h1>
