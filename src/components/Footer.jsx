@@ -2,7 +2,7 @@ const Footer = () => {
     return (
         <footer className="site-footer">
             <div className="container py-4">
-                <div className="row">
+                <div className="row text-center text-md-left">
                     <div className="col-md-4 mb-3 mb-md-0">
                         <h3>Circolo Il Fiaschetto</h3>
                         <p>Via palazzi, 39<br />Coltano (PI)</p>
@@ -15,10 +15,9 @@ const Footer = () => {
                     </div>
                     <div className="col-md-4">
                         <h3>Seguici</h3>
-                        <div className="social-links">
-                            <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-                            <a href="#" aria-label="TripAdvisor"><i className="fab fa-tripadvisor"></i></a>
+                        <div className="social-links d-flex justify-content-center">
+                            <a href="https://www.instagram.com/circoloilfiaschetto/?hl=it" target="_blank" aria-label="Instagram"><i className="fab fa-instagram fs-1"></i></a>
+
                         </div>
                     </div>
                 </div>
