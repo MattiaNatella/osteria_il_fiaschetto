@@ -241,86 +241,6 @@ h3 {
     color: #FADDA0;
 }
 
-/* Responsive footer adjustments */
-@media (max-width: 768px) {
-    .site-footer {
-        text-align: center;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    main {
-        margin-top: 50px;
-    }
-
-    header {
-        height: auto;
-    }
-
-    #header-top {
-        display: inline-block;
-    }
-
-    .logo-nome {
-        font-size: 1.2rem;
-    }
-
-    #header-top {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    #header-top ul {
-        gap: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-
-    }
-
-    .menu-card {
-        height: auto;
-        min-height: 180px;
-    }
-
-    .menu-title {
-        font-size: 1.5rem;
-    }
-
-    .menu-card h3 {
-        font-size: 1.1rem;
-        height: auto;
-    }
-
-    .menu-card .description {
-        font-size: 0.8rem;
-        -webkit-line-clamp: 2;
-    }
-
-    .card-header {
-        font-size: 1.5rem;
-    }
-
-    .card-text {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .container {
-        padding: 10px;
-    }
-
-    .menu-section {
-        margin-bottom: 2rem;
-    }
-}
-
 /* Hero Image Styles */
 .hero-image {
     margin-left: auto;
@@ -385,7 +305,98 @@ h3 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Update header styles */
+#header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    flex-wrap: wrap;
+}
+
+#header-top ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Update the media queries */
 @media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .menu-section {
+        margin-bottom: 2rem;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .site-footer {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    #header-top {
+        display: inline-block;
+    }
+
+    .logo-nome {
+        font-size: 1.2rem;
+    }
+
+    #header-top {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    #header-top ul {
+        gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .menu-card {
+        height: auto;
+        min-height: 180px;
+    }
+
+    .menu-title {
+        font-size: 1.5rem;
+    }
+
+    .menu-card h3 {
+        font-size: 1.1rem;
+        height: auto;
+    }
+
+    .menu-card .description {
+        font-size: 0.8rem;
+        -webkit-line-clamp: 2;
+    }
+
+    .card-header {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
     .hero-section {
         height: 400px;
         width: 95%;
@@ -401,5 +412,105 @@ h3 {
 
     .hero-content p {
         font-size: 1rem;
+    }
+
+    #header-top {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 5px;
+    }
+
+    #header-top ul {
+        width: 100%;
+        justify-content: center;
+        padding: 5px 0;
+    }
+
+    #header-top a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-nome {
+        font-size: 1rem;
+        padding: 0 5px;
+        text-align: center;
+    }
+
+    #header-top {
+        padding: 5px;
+    }
+
+    #header-top ul {
+        gap: 5px;
+    }
+
+    #header-top a {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+        white-space: nowrap;
+    }
+
+    header {
+        min-height: 60px;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) {
+
+    header {
+        height: auto;
+        padding: 6px
+    }
+
+    main {
+        margin-top: 60px;
+    }
+
+    #header-top {
+        flex-direction: column;
+    }
+
+    #header-top a {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .logo-nome {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #header-top {
+        padding: 0 30px;
+    }
+
+    #header-top ul {
+        gap: 25px;
+    }
+
+    #header-top a {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #header-top {
+        padding: 0 40px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    #header-top ul {
+        gap: 30px;
+    }
+
+    #header-top a {
+        font-size: 1.2rem;
     }
 }
