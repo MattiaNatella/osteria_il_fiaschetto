@@ -247,6 +247,18 @@ h3,
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    main {
+        margin-top: 50px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    #header-top {
+        display: inline-block;
+    }
+
     .logo-nome {
         font-size: 1.2rem;
     }
@@ -258,9 +270,10 @@ h3,
     }
 
     #header-top ul {
-        flex-direction: column;
         gap: 10px;
-        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
     }
 
     .menu-card {
